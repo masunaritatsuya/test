@@ -1,0 +1,15 @@
+package capsule;
+
+public class Person {
+
+	private String name=null;
+	
+
+	public String getName(){
+		return this.name;
+	}
+
+
+	
+	
+}
