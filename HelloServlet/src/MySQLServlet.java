@@ -38,7 +38,7 @@ public class MySQLServlet extends HttpServlet {
 	   Connection conn=null;
 	   String url="jdbc:mysql://localhost/testdb";
 	   String user="root";
-	   String password="smsk3609";
+	   String password="mysql";
 
 	   try{
 		 Class.forName("com.mysql.jdbc.Driver").newInstance();
