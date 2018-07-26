@@ -1,5 +1,5 @@
 package com.internousdev.login.util;
-
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
@@ -8,7 +8,7 @@ public class DBConnector {
 	    private static String url="jdbc:nysql://localhost/logindb";
 
 	    private static String user="root";
-	    private static String password="mysql";
+	    private static String password="smsk3609";
 
 
 	    public Connection getConnection(){

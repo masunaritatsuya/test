@@ -2,9 +2,11 @@ package com.internousdev.login.action;
 
 import java.sql.SQLException;
 import java.util.Map;
+
 import org.apache.struts2.interceptor.SessionAware;
-import com.internousdev.dao.LoginDAO;
-import com.internousdev.dto.LoginDTO;
+
+import com.internousdev.login.dao.LoginDAO;
+import com.internousdev.login.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -31,7 +33,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
          public String getName(){
         	 return name;
          }
-         public void set Name(String name){
+         public void setName(String name){
         	 this.name=name;
          }
          public String getPassword(){
