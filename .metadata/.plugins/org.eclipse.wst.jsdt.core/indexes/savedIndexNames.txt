@@ -7,5 +7,4 @@ INDEX VERSION 1.3+C:\Users\PCuser\Desktop\workspace\workspace-masunari\test\.met
 2708556811.index
 3099734279.index
 947721260.index
-1193100348.index
 2795787554.index
