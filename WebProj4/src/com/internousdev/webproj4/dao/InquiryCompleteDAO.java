@@ -4,19 +4,19 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.ArrayList;
-import java.sql.List;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.internousdev.webroj4.dto.InquiryDTO;
-import com.internousdev.webroj4.util.DBConnector;
+import com.internousdev.webproj4.dto.InquiryDTO;
+import com.internousdev.webproj4.util.DBConnector;
 
 
 public class InquiryCompleteDAO {
 
 	List<InquiryDTO>inquiryDTOList=new ArrayList<InquiryDTO>();
 
-	public List(InquiryDTO)select() {
-		DBConnector db=newDBConnector();
+	public List<InquiryDTO>select() {
+		DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
 		String sql="select*from inquiry";
@@ -41,9 +41,10 @@ public class InquiryCompleteDAO {
 		}
 		return inquiryDTOList;
 	}
+
 	public int insert(String name,String qtype,String body){
 		int ret=0;
-		com.internousdev.webrpoj4.util.DBConnector db=new DBConnector();
+		com.internousdev.webproj4.util.DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
 		String sql="inser into inquiry values(?,?,?)";

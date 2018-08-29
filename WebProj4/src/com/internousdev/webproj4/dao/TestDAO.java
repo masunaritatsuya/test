@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.internousdev.webproj4.dto.LoginDTO;
-import com.internousdev.webrpoj4.util.DBConnector;
+import com.internousdev.webproj4.util.DBConnector;
 
 public class TestDAO {
 
@@ -16,7 +16,7 @@ public class TestDAO {
 
 	public int insert(String username,String password){
 		int ret=0;
-		com.internousdev.webrpoj4.util.DBConnector db=new DBConnector();
+		com.internousdev.webproj4.util.DBConnector db=new DBConnector();
 		Connection con=db.getConnection();
 
 		String sql="insert into users(user_name,password)values(?,?)";
@@ -40,7 +40,7 @@ public class TestDAO {
 		return ret;
 	}
     public List<LoginDTO>select(String username,String password){
-    	com.internousdev.webrpoj4.util.DBConnector db=new DBConnector();
+    	com.internousdev.webproj4.util.DBConnector db=new DBConnector();
     	Connection con=db.getConnection();
 
     	String sql="select*from users where user_name=? and password=?";

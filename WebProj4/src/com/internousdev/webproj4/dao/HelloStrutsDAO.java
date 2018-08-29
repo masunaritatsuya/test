@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.internousdev.webproj4.dto.HelloStrutsDTO;
-import com.internousdev.webrpoj4.util.DBConnector;
+import com.internousdev.webproj4.util.DBConnector;
 
 
 

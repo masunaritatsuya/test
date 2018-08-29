@@ -1,4 +1,4 @@
-package com.internousdev.webrpoj4.util;
+package com.internousdev.webproj4.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class DBConnector {
 	private static String driverName="com.mysql.jdbc.Driver";
 	private static String url="jdbc:mysql://localhost/testdb";
 	private static String user="root";
-	private static String password="smsk3609";
+	private static String password="mysql";
 
 	public Connection getConnection() {
 		Connection con=null;

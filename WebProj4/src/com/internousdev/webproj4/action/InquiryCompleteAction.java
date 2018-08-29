@@ -17,7 +17,7 @@ public class InquiryCompleteAction extends ActionSupport{
     public String execute() {
 		String ret=ERROR;
 		InquiryCompleteDAO dao=new InquiryCompleteDAO();
-		int count=daoinsert(name,qtype,body);
+		int count=dao.insert(name,qtype,body);
 		if(count>0){
 			inquiryDTOList=dao.select();
 
