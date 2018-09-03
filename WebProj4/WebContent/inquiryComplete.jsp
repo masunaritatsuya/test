@@ -20,7 +20,7 @@
 			<s:iterator value="inquiryDTOList">
 				<tr>
 					<td><s:property value="name" /></td>
-					<s:if test='qtype="company"'>
+					<s:if test='qtype=="company"'>
 						<td>会社について</td>
 					</s:if>
 
