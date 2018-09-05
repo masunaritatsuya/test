@@ -1,6 +1,7 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>metadata</message>\r\n</messages>
 eclipse.preferences.version=1
-resourcehistory_graph_split=547,446
-resourcehistory_rev_split=700,300
+resourcehistory_graph_split=433,559
+resourcehistory_rev_split=229,766
 show_git_prefix_warning=false
 show_home_drive_warning=false
 show_initial_config_dialog=false
