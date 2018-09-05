@@ -6100,3 +6100,111 @@ java.io.FileNotFoundException: C:\Users\testuser\Desktop\workspace\workspace-mas
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-05 20:04:12.949
+!MESSAGE Stash create error
+!STACK 1
+org.eclipse.team.core.TeamException: Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log4197591447744337977.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:98)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log4197591447744337977.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	... 5 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2018-09-05 20:04:12.950
+!MESSAGE Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log4197591447744337977.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+!STACK 0
+java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log4197591447744337977.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-05 20:04:22.298
+!MESSAGE Stash create error
+!STACK 1
+org.eclipse.team.core.TeamException: Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6203938071310878789.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:98)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6203938071310878789.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	... 5 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2018-09-05 20:04:22.298
+!MESSAGE Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6203938071310878789.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+!STACK 0
+java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log6203938071310878789.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-05 20:04:32.153
+!MESSAGE Stash create error
+!STACK 1
+org.eclipse.team.core.TeamException: Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log7285850054622490458.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:98)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log7285850054622490458.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	... 5 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2018-09-05 20:04:32.153
+!MESSAGE Exception caught during execution of reset command. Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log7285850054622490458.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+!STACK 0
+java.io.IOException: Could not rename file C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log7285850054622490458.tmp to C:\Users\testuser\Desktop\workspace\workspace-masunari\test\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1188)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:450)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:386)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:203)
+	at org.eclipse.jgit.api.StashCreateCommand.call(StashCreateCommand.java:387)
+	at org.eclipse.egit.core.op.StashCreateOperation$1.run(StashCreateOperation.java:96)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.StashCreateOperation.execute(StashCreateOperation.java:110)
+	at org.eclipse.egit.ui.internal.stash.StashCreateUI$1.runInWorkspace(StashCreateUI.java:80)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
