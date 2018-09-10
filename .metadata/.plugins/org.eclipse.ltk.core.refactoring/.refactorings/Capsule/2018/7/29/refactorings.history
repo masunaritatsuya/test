@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="フィールド &apos;capsule.Person.name&apos; を &apos;capsule.Person&apos;にカプセル化します&#x0D;&#x0A;- 元のプロジェクト: &apos;Capsule&apos;&#x0D;&#x0A;- オリジナル要素: &apos;capsule.Person.name&apos;&#x0D;&#x0A;- getter メソッド名: &apos;getName&apos;&#x0D;&#x0A;- setter メソッド名: &apos;setName&apos;&#x0D;&#x0A;- フィールドの可視性: &apos;public&apos;&#x0D;&#x0A;- 宣言型の getter および setter メソッドを使用" comments="false" declaring="true" description="フィールド &apos;name&apos; をカプセル化します" flags="589830" getter="getName" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;capsule{Person.java[Person^name" insertion="0" setter="setName" stamp="1532090654339" version="1.0" visibility="1"/>
-</session>
