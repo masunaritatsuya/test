@@ -13,7 +13,7 @@
 <meta name="keywords" content=""/>
 
 <title>Home画面</title>
-<style type="text/css>
+<style type="text.css">
 body{
 margin:0;
 padding:0;
@@ -54,16 +54,20 @@ margin:0 auto;
 
  <div id="header">
  <div id="pr">
+ </div>
+ </div>
  </head>
  <div id="main">
  <div id="top">
  <p>Home</p>
  </div>
+ </div>
+
  <div>
   <s:form action="HomeAction">
   <s:submit value="商品購入"/>
   </s:form>
-  </head>
+
   </div>
   <div id="footer">
   <div id="pr">
