@@ -10,25 +10,21 @@
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
-<title>UserCreate画面</title>
-
+<title>UserCreateConfirm画面</title>
 <style type="text/css">
-
 body{
 margin:0;
 padding:0;
 line-height:1.6;
 letter-spacing:1px;
-font-family:Verdana,Helvetica,sans-serif;
+font-family:Verdana,helvetica,sans-serif;
 font-size:12px;
-color:#333;
 background:#fff;
 }
 
 table{
 text-align:center;
-margin:0 auto;
-}
+margin:0 auto;}
 
 #top{
 width:780px;
@@ -47,61 +43,60 @@ width:100%;
 height:500px;
 text-align:center;
 }
+
 #footer{
 width:100%;
 height:80px;
 background-color:black;
-clear:both;}
+clear:both;
+}
 </style>
 </head>
 <body>
+
 <div id="header">
 <div id="pr">
 </div>
 </div>
 <div id="main">
 <div id="top">
-<p>UserCreate</p>
-
+<p>UserCreateConfirm</p>
 </div>
 <div>
-<s:if test="errorMessage!=''">
-<s:property value="errorMessage" escape="false"/>
-</s:if>
+<h3>登録する内容は以下でよろしいですか。</h3>
 <table>
-<s:form action="UserCreateConfirmAction">
-<tr>
+<s:form action="UserCreateCompleteAction">
+<tr id="box">
 <td>
 <label>ログインID:</label>
 </td>
 <td>
-<input type="text" name="loginUserId" value=""/>
+<s:property value="loginUserId" escape="false"/>
 </td>
 </tr>
-<tr>
+<tr id="box">
 <td>
 <label>ログインPASS:</label>
 </td>
 <td>
-<input type="text" name="loginPassword" value=""/>
+<s:property value="loginPassword" escape="false"/>
 </td>
 </tr>
-<tr>
+<tr id="box">
 <td>
 <label>ユーザー名:</label>
 </td>
 <td>
-<input type="text" name="userName" value=""/>
+<s:property value="userName" escape="false"/>
 </td>
 </tr>
-<s:submit value="登録"/>
-
+<tr>
+<td>
+<s:submit value="完了"/>
+</td>
+</tr>
 </s:form>
 </table>
-<div>
-<span>前画面に戻る場合は</span>
-<a href='<s:url action="HomeAction"/>'>こちら</a>
-</div>
 </div>
 </div>
 <div id="footer">
