@@ -6,7 +6,7 @@
 
 <struts>
  <constant name="struts.devMode" value="true"/>
- <package name="com.internousdev.template.action" extends="sturts-default">
+ <package name="com.internousdev.template.action" extends="struts-default">
 
 <action name="HomeAction" class="com.internousdev.template.action.HomeAction"
  method="execute">
@@ -43,6 +43,6 @@
 <result name="success">myPage.jsp</result>
 </action>
 
- 
+
  </package>
 </struts>
