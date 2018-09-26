@@ -71,7 +71,7 @@
 <tr>
 <td>値段</td>
 <td>
-<s:property value="sesion.total_price"/>
+<s:property value="session.total_price"/>
 <span>円</span>
 </td>
 </tr>

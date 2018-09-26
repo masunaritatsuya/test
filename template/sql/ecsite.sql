@@ -1,17 +1,17 @@
 set names utf8;
 set foreign_key_checks=0;
 
-drop database if exists ecsite;
-create database if not exists ecsite;
-use ecsite;
+drop database if exists ecsite_masunari;
+create database if not exists ecsite_masunari;
+use ecsite_masunari;
 
 drop table if exists login_user_transaction;
 create table login_user_transaction(
   id int not null primary key auto_increment,
   login_id varchar(16)unique,
-  login_passvarchar(16),
-  user_name varhar(50),
-  insert_data datetime,
+  login_pass varchar(16),
+  user_name varchar(50),
+  insert_date datetime,
   updated_date datetime);
 
   drop table if exists item_info_transaction;
@@ -34,5 +34,5 @@ create table login_user_transaction(
     insert_date datetime,
     delete_date datetime);
 
-  INSERT INTO item_transaction(item_name,item_price,item_stock)VALUES("ノートBook",100,50);
+  INSERT INTO item_info_transaction(item_name,item_price,item_stock)VALUES("ノートBook",100,50);
   INSERT INTO login_user_transaction(login_id,login_pass,user_name)VALUES("internous","internous01","test");
