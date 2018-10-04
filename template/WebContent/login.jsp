@@ -62,7 +62,7 @@ clear:both;
   <div id="top">
   <p>Login</p>
   </div>
-  </div>
+  <div>
   <h3>商品を購入する際にはログインをお願いします。</h3>
   <s:form action="LoginAction">
   <s:textfield name="loginUserId"/>
@@ -75,14 +75,12 @@ clear:both;
   <a href='<s:url action="UserCreateAction"/>'>こちら</a>
   </span>
   </div>
+  </div>
+  </div>
   <div id="footer">
   <div id="pr">
   </div>
   </div>
-
-
-
-
 
 </body>
 </html>
