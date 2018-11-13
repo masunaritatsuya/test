@@ -8,18 +8,16 @@
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta http-equiv="Content-Script-Type" content="text/javascript"/>
 <meta http-equiv="imagetoolbar" content="no"/>
-<meta name="description" content="no"/>
+<meta name="description" content=""/>
 <meta name="keywords" content=""/>
-
-<title>UserCreate画面</title>
+<title>BuyItemComplete画面</title>
 <style type="text/css">
 body{
 margin:0;
 padding:0;
 line-height:1.6;
 letter-spacing:1px;
-font-family:Verdana,Helvatica,sans-serif;
-font-size:12px;
+font-family:Verdana,Helvetica,sans-serif;
 color:#333;
 background:#fff;
 }
@@ -44,62 +42,35 @@ text-align:center;
 }
 #footer{
 width:100%;
-height:80px;
+hegiht:80px;
 background-color:black;
 clear:both;
 }
 </style>
 
-
 </head>
 <body>
-
 <div id="header">
 <div id="pr">
 </div>
 </div>
 <div id="main">
 <div id="top">
-<p>UserCreate</p>
+<p>BuyItemComplete</p>
 </div>
 <div>
-<s:if test="errorMassage !=">
-<s:property value="errorMassage" escape="false"/>
-</s:if>
-<table>
-<s:form action="UserCreateConfirmAction">
-<tr>
-<td>
-<label>ログインID:</label>
-</td>
-<td>
-<input type="text" name="loginUserId" value=""/>
-</td>
-</tr>
-<tr>
-<td>
-<label>ログインPASS:</label>
-</td>
-<td>
-<input type="text" name="loginPassword" value=""/>
-</td>
-</tr>
-<tr>
-<td>
-<label>ユーザー名:</label>
-</td>
-<td>
-<input type="text" name="userName" value=""/>
-</td>
-</tr>
-<s:submit value="登録"/>
-</s:form>
+<p>購入手続きが完了致しました。</p>
+<div>
+<a href='<s:url aciton="MyPageAction"/>'>マイページ</a>
+<span>から購入履歴の確認が可能です。</span>
+<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 
-</table>
-<div>
-<span>前画面に戻る場合は</span>
-<a href='<s:url action="HomeAction"/>'>こちら</a>
 </div>
+</div>
+</div>
+
+<div id="footer">
+<div id="pr">
 
 </div>
 </div>

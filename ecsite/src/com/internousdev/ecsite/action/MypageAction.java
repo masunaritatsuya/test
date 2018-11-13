@@ -1,17 +1,18 @@
 package com.internousdev.ecsite.action;
 
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.intercepter.SeesionAware;
-import java.sq.SQLException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.internousdev.ecsite.dao.MyPageDAO;
 import com.internousdev.ecsite.dto.MyPageDTO;
-
+import com.opensymphony.xwork2.ActionSupport;
 public class MypageAction extends ActionSupport implements SessionAware{
 
-	public Map<String.Object>session;
+	public Map<String,Object>session;
 	private MyPageDAO myPageDAO=new MyPageDAO();
 	private ArrayList<MyPageDTO>myPageList=new ArrayList<MyPageDTO>();
 	private String deleteFlg;
@@ -27,7 +28,7 @@ public class MypageAction extends ActionSupport implements SessionAware{
     	String user_master_id=session.get("login_user_id").toString();
     	myPageList=myPageDAO.getMyPageUserInfo(item_transaction_id,user_master_id);
 
-    }else if{deleteFlg.equals("1")){
+    }else if(deleteFlg.equals("1")){
     	delete();
     }
 	String result=SUCCESS;
@@ -49,6 +50,7 @@ public class MypageAction extends ActionSupport implements SessionAware{
     	}else if(res==0){
     		setMessage("商品情報の削除に失敗しました。");
     	}
+    	}
 
 
     	public void setDeleteFlg(String deleteFlg){
@@ -67,5 +69,6 @@ public class MypageAction extends ActionSupport implements SessionAware{
     	public void setMessage(String message){
     		this.message=message;
     	}
+}
 
-    }
+
