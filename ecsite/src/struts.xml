@@ -6,17 +6,20 @@
 <constant name="struts.devMode" value="true" />
 <package name="com.internousdev.ecsite.action" extends="struts-default">
 
-<action name="GoHomeAction"
-class="com.internousdev.exsite.action.GoHomeAction" method="execute">
-<result name="success">home.jsp</result>
-</action>
 
 <action name="HomeAction" class="com.internousdev.ecsite.action.HomeAction" method="execute">
 <result name="login">login.jsp</result>
 <result name="success">buyItem.jsp</result>
 </action>
 
-<action name="LoginAction" class="com.internousdev.ecsite.action.LOginAction" method="ececute">
+
+<action name="GoHomeAction" class="com.internousdev.ecsite.action.GoHomeAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
+
+
+
+<action name="LoginAction" class="com.internousdev.ecsite.action.LoginAction" method="execute">
 <result name="success">buyItem.jsp</result>
 <result name="error">login.jsp</result>
 </action>
@@ -54,7 +57,7 @@ class="com.internousdev.exsite.action.GoHomeAction" method="execute">
 <result name="error">error.jsp</result>
 </action>
 
-<action name="LogoutAction" class="com.internousdev.ecsite.actionn.LogoutAction" method="execute">
+<action name="LogoutAction" class="com.internousdev.ecsite.action.LogoutAction" method="execute">
 <result name="success">home.jsp</result>
 </action>
 </package>
