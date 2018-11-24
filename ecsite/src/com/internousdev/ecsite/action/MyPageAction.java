@@ -12,9 +12,9 @@ import com.internousdev.ecsite.dto.MyPageDTO;
 import com.opensymphony.xwork2.ActionSupport;
 public class MyPageAction extends ActionSupport implements SessionAware{
 
-	public Map<String,Object>session;
+	public Map<String,Object> session;
 	private MyPageDAO myPageDAO=new MyPageDAO();
-	private ArrayList<MyPageDTO>myPageList=new ArrayList<MyPageDTO>();
+	private ArrayList<MyPageDTO> myPageList=new ArrayList<MyPageDTO>();
 	private String deleteFlg;
 	private String message;
 
@@ -57,10 +57,10 @@ public class MyPageAction extends ActionSupport implements SessionAware{
     		this.deleteFlg=deleteFlg;
     	}
     	@Override
-    	public void setSession(Map<String,Object>session){
+    	public void setSession(Map<String,Object> session){
     		this.session=session;
     	}
-    	public ArrayList<MyPageDTO>getMyPageList(){
+    	public ArrayList<MyPageDTO> getMyPageList(){
     		return this.myPageList;
     	}
     	public String getMessage(){

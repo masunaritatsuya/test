@@ -101,7 +101,7 @@ table{
             <s:submit value="削除" method="delete"/>
             </s:form>
             </s:elseif>
-            <s:if test="message! =null">
+            <s:if test="message != null">
             <h3><s:property value="message"/></h3>
             </s:if>
             <div id="text-right">
@@ -112,12 +112,12 @@ table{
       </div>
    </div>
 <div id="footer">
-<div id="footer">
+
 <div id="pr">
 
 </div>
 </div>
-</div>
+
 
 
 </body>

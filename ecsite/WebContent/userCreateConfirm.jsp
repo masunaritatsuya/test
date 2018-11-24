@@ -26,7 +26,7 @@ background:#fff;
 }
 
 table{
-text/align:center;
+text-align:center;
 margin:0 auto;
 }
 
@@ -45,7 +45,7 @@ background-color:black;
 #main{
 width:100%;
 height:500px;
-text/align:center;
+text-align:center;
 }
 #footer{
 width:100%;
