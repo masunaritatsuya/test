@@ -63,11 +63,14 @@ clear:both;
 <p>UserCreate</p>
 </div>
 <div>
-<s:if test="errorMassage !=">
-<s:property value="errorMassage" escape="false"/>
+<s:if test="errorMessage !=">
+<s:property value="errorMessage" escape="false"/>
 </s:if>
+
 <table>
 <s:form action="UserCreateConfirmAction">
+
+
 <tr>
 <td>
 <label>ログインID:</label>
@@ -76,6 +79,8 @@ clear:both;
 <input type="text" name="loginUserId" value=""/>
 </td>
 </tr>
+
+
 <tr>
 <td>
 <label>ログインPASS:</label>
@@ -84,6 +89,8 @@ clear:both;
 <input type="text" name="loginPassword" value=""/>
 </td>
 </tr>
+
+
 <tr>
 <td>
 <label>ユーザー名:</label>
@@ -92,10 +99,14 @@ clear:both;
 <input type="text" name="userName" value=""/>
 </td>
 </tr>
+
+
 <s:submit value="登録"/>
 </s:form>
 
 </table>
+
+
 <div>
 <span>前画面に戻る場合は</span>
 <a href='<s:url action="HomeAction"/>'>こちら</a>
