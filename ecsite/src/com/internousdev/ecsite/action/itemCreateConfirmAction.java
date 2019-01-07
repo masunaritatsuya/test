@@ -1,8 +1,10 @@
 	package com.internousdev.ecsite.action;
 
 	import java.util.Map;
-	import org.apache.struts2.interceptor.SessionAware;
-	import com.opensymphony.xwork2.ActionSupport;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
 
 	public class itemCreateConfirmAction extends ActionSupport implements SessionAware{
 
@@ -17,13 +19,13 @@
 
 			if(!(itemName.equals(""))
 					&&!(itemPrice.equals(""))
-					&&!(itemStock.equals("")){
+					&&!(itemStock.equals(""))){
 				session.put("itemName", itemName);
 				session.put("itemPrice",itemPrice);
 				session.put("itemStock", itemStock);
 			}else{
 				setErrorMessage("未入力項目があります。");
-				result=ERROR
+				result=ERROR;
 			}
 			return result;
 
