@@ -80,7 +80,7 @@ table{text-align:center;
 <label>ログインPASS:</label>
 </td>
 <td>
-<s:property value="loginPassword" escpa="false"/>
+<s:property value="loginPassword" escape="false"/>
 </td>
 </tr>
 
@@ -89,7 +89,7 @@ table{text-align:center;
 <label>ユーザー名:</label>
 </td>
 <td>
-<s:property vlaue="userName" escape="false"/>
+<s:property value="userName" escape="false"/>
 </td>
 </tr>
 

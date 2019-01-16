@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.ecsite.dao.ItemCreateCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
