@@ -8,7 +8,7 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.internousdev.ecsite.dao.ItemCreateCompleteDAO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class ItemCreateCompleteAction extends ActionSupport implements SessionAware{
+public class itemCreateCompleteAction extends ActionSupport implements SessionAware{
 
 	private String itemName;
 	private String itemPrice;

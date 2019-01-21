@@ -61,35 +61,35 @@ table{text-align:center;
 </div>
 <div id="main">
 <div id="top">
-<p>UserCreateConfirm</p>
+<p>itemCreateConfirmAction</p>
 </div>
 <div>
 <h3>登録する内容は以下でよろしいですか。</h3>
 <table>
-<s:form action="UserCreateCompleteAction">
+<s:form action="itemCreateCompleteAction">
 <tr id="box">
 <td>
-<label>ログインID:</label>
+<label>商品名:</label>
 </td>
 <td>
-<s:property value="loginUserId" escape="false"/>
+<s:property value="itemName" escape="false"/>
 </td>
 </tr>
 <tr id="box">
 <td>
-<label>ログインPASS:</label>
+<label>値段:</label>
 </td>
 <td>
-<s:property value="loginPassword" escape="false"/>
+<s:property value="itemPrice" escape="false"/>
 </td>
 </tr>
 
 <tr id="box">
 <td>
-<label>ユーザー名:</label>
+<label>在庫数:</label>
 </td>
 <td>
-<s:property value="userName" escape="false"/>
+<s:property value="itemStock" escape="false"/>
 </td>
 </tr>
 

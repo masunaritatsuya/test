@@ -23,9 +23,6 @@ import com.opensymphony.xwork2.ActionSupport;
 				session.put("itemName", itemName);
 				session.put("itemPrice",itemPrice);
 				session.put("itemStock", itemStock);
-			}else{
-				setErrorMessage("未入力項目があります。");
-				result=ERROR;
 			}
 			return result;
 

@@ -89,10 +89,11 @@ table{
 <td>
 <input type="text" name="itemPrice" value=""/><span>円</span>
 </td>
+</tr>
 
 <tr>
 <td>
-<label>在庫数</label>
+<label>在庫数：</label>
 </td>
 <td>
 <input type="text" name="itemStock" value=""/><span>個</span>
